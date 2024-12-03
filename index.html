@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata 1MG Clone</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="logo">Tata 1MG</div>
+        <nav>
+            <a href="#">Medicines</a>
+            <a href="#">Lab Tests</a>
+            <a href="#">Consult Doctors</a>
+            <a href="#">Care Plan</a>
+        </nav>
+        <button class="btn">Quick Order</button>
+    </header>
+    
+    <div class="banner">
+        <h1>Welcome to Tata 1MG</h1>
+        <p>Your Health, Our Priority - Up to 50% Off on Health Packages!</p>
+    </div>
+    
+    <div class="categories">
+        <div class="category">
+            <img src="medicine.jpg" alt="Category">
+            <h3>Vitamins & Nutrition</h3>
+            <p>Up to 30% Off</p>
+        </div>
+        <div class="category">
+            <img src="fitness.jpg" alt="Fitness">
+            <h3>Fitness Supplements</h3>
+            <p>Up to 25% Off</p>
+        </div>
+        <div class="category">
+            <img src="personal.jpg" alt="Personal Care">
+            <h3>Personal Care</h3>
+            <p>Up to 20% Off</p>
+        </div>
+        <div class="category">
+            <img src="healthy.jpg" alt="Healthy Snacks">
+            <h3>Healthy Snacks</h3>
+            <p>Flat Discounts</p>
+        </div>
+    </div>
+    
+    <div class="cta">
+        <h2>Join Our Care Plan</h2>
+        <p>Get exclusive benefits like free shipping, priority delivery, and extra savings!</p>
+        <button class="btn">Know More</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Tata 1MG. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Google Dialogflow Chatbot -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="FoodBot"
+        agent-id="cfaed82d-7747-4787-9bf1-621caafcb2d6"
+        language-code="en">
+    </df-messenger>
+</body>
+</html>
