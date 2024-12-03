@@ -1,0 +1,151 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+/* Header styles */
+header {
+    background-color: #0052cc;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Banner styles */
+.banner {
+    background-image: linear-gradient(to right, #84caff, #0073e6);
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.banner p {
+    font-size: 18px;
+}
+
+/* Category styles */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+}
+.category {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    width: 25%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.category img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* CTA styles */
+.cta {
+    text-align: center;
+    padding: 30px;
+    background: #0073e6;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 15%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cta h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.cta p {
+    font-size: 18px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0052cc;
+    color: white;
+    margin-top: 30px;
+}
+footer p {
+    font-size: 14px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #ffd700;
+    color: #0052cc;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #f0b700;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category {
+        width: 80%;
+    }
+    .banner h1 {
+        font-size: 28px;
+    }
+    .banner p {
+        font-size: 16px;
+    }
+}
